@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({handleSearch}) => {
   
   
   
@@ -11,7 +11,7 @@ const Header = () => {
         <span className="fw-bold fs-5 text-white mx-auto">NOTES_TRACKER</span>
 
 
-        <form className="d-flex">
+        <form className="d-flex" onSubmit={handleSearch}>
 
           <input
             className="form-control me-2"
